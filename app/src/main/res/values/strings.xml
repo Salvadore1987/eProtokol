@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">eProtokol</string>
+    <string name="login_jetton_text">Jeton raqami</string>
+    <string name="login_password_text">Parol</string>
+</resources>
