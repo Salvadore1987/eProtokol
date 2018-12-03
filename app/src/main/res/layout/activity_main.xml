@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorBlueGrayLight"
+    tools:context=".activities.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/border"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/innerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/mainLayout"
+            app:layout_constraintBottom_toBottomOf="@id/mainLayout"
+            app:layout_constraintEnd_toEndOf="@id/mainLayout"
+            app:layout_constraintStart_toStartOf="@id/mainLayout">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/protocolLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/innerLayout"
+                app:layout_constraintBottom_toBottomOf="@id/innerLayout"
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/protocolBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_protocol_item"
+                    android:background="@drawable/border_btn"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawableTop="@drawable/ic_file"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/photoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/innerLayout"
+                app:layout_constraintBottom_toBottomOf="@id/innerLayout"
+                app:layout_constraintLeft_toRightOf="@id/protocolLayout"
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/photoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_photo_item"
+                    android:background="@drawable/border_btn"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawableTop="@drawable/ic_photo_camera"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/pedestrianLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/innerLayout"
+                app:layout_constraintBottom_toBottomOf="@id/innerLayout"
+                app:layout_constraintLeft_toRightOf="@id/photoLayout"
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/pedestrianBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_pedestrian_item"
+                    android:background="@drawable/border_btn"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawableTop="@drawable/ic_pedestrian"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/findLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/innerLayout"
+                app:layout_constraintBottom_toBottomOf="@id/innerLayout"
+                app:layout_constraintLeft_toRightOf="@id/pedestrianLayout"
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/findBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_find_item"
+                    android:background="@drawable/border_btn"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:drawableTop="@drawable/ic_simple_globe_search"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -2,4 +2,12 @@
     <string name="app_name">eProtokol</string>
     <string name="login_jetton_text">Jeton raqami</string>
     <string name="login_password_text">Parol</string>
+    <string name="login_submit_btn">KIRISH</string>
+    <string name="error_login_text_message">Notogri</string>
+    <string name="menu_protocol_item">PROTOKOL</string>
+    <string name="menu_photo_item">FOTOFIKSATSIYA</string>
+    <string name="menu_pedestrian_item">PIYODA</string>
+    <string name="menu_find_item">IZLASH</string>
+    <string name="login_txt_view">KIRISH M\'ALUMOTLAR</string>
+    <string name="menu_item_exit">CHIQISH</string>
 </resources>
